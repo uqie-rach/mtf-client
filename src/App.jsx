@@ -1,5 +1,5 @@
 import React from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   HomePage,
   LoginPage,
@@ -10,46 +10,23 @@ import {
 import { Layout, Authenticated } from "./layout/Layout";
 
 const App = () => {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          path: "/",
-          element: <HomePage />,
-        },
-        {
-          path: "/login",
-          element: <LoginPage />,
-        },
-        {
-          path: "/signup",
-          element: <SignUpPage />,
-        },
-      ],
-    },
-    {
-      path: "/",
-      element: <Authenticated />,
-      children: [
-        {
-          path: "/",
-          element: <HomePage />,
-        },
-        {
-          path: "/profile",
-          element: <ProfilePage />,
-        },
-        {
-          path: "/register-team",
-          element: <RegisterTeamPage />,
-        },
-      ],
-    },
-  ]);
-
-  return <RouterProvider router={router} />;
+  return (
+    <Router basename="/">
+      {/* Atur base URL sesuai dengan kebutuhan Anda */}
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+        </Route>
+        <Route path="/" element={<Authenticated />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/register-team" element={<RegisterTeamPage />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 };
 
 export default App;
