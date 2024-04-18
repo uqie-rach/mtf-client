@@ -8,15 +8,21 @@ const Profile = () => {
   const [currentMembers, setCurrentMembers] = useState([]);
 
   useEffect(() => {
-    if (groupId) verifyMembers();
-    if (groupId) setCurrentMembers(filterMembersRole(members));
-  }, [members]);
+    if (groupId && !members) {
+      verifyMembers();
+    }
+
+    if (groupId && members) {
+      setCurrentMembers(filterMembersRole(members));
+    }
+  }, []);
 
   const verifyMembers = async () => {
     const response = await useApi.get(`/groups/${groupId}`);
 
     if (response) {
       updateMembers(response.data.data.members);
+      setCurrentMembers(filterMembersRole(response.data.data.members));
     }
   };
 
@@ -57,7 +63,7 @@ const Profile = () => {
       )}
 
       <div className="members">
-        {members &&
+        {members ? (
           Object.keys(currentMembers).map((role, index) => (
             <div key={index}>
               <h2>{role}</h2>
@@ -70,7 +76,10 @@ const Profile = () => {
                 ))}
               </ul>
             </div>
-          ))}
+          ))
+        ) : (
+          <p>No members found</p>
+        )}
       </div>
     </div>
   );

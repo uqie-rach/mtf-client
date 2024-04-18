@@ -8,26 +8,26 @@ const Navbar = () => {
     useContext(AuthContext);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (user) verifyGroup();
-  }, [groupId]);
-
-  const verifyGroup = async () => {
-    const groupCredentials = await useApi.get(`/users/${user.id}`);
-    if (groupCredentials) {
-      updateGroupId(groupCredentials.data.data.groupId);
-    } else {
-      navigate("/profile");
-    }
-  };
+  // const verifyGroup = async () => {
+  //   const groupCredentials = await useApi.get(`/users/${user.id}`);
+  //   if (groupCredentials) {
+  //     updateGroupId(groupCredentials.data.data.groupId);
+  //   } else {
+  //     navigate("/profile");
+  //   }
+  // };
 
   const handleLogout = async () => {
     try {
-      const response = await useApi.post("/users/logout");
+      const response = await useApi.post("/auth/logout");
 
       updateUser(null);
       updateGroupId(null);
       updateMembers(null);
+
+      console.log(response.data.message)
+
+      navigate('/login')
     } catch (e) {
       console.log(
         e.response.data.errors ||

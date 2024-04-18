@@ -17,23 +17,22 @@ const Login = () => {
     const { password, email } = Object.fromEntries(formData);
 
     try {
-      let response = await useApi.post("/auth/login", {
+      const response = await useApi.post("/auth/login", {
         email: email,
         password: password,
       });
 
       // SAVE USER DATA TO LOCAL STORAGE && UPDATE AUTH CONTEXT
       updateUser(response.data.data);
-      
+
       // CHECK IF USER HAD REGISTERED A TEAM
       const { groupId } = response.data.data;
-      if (groupId) { 
-        updateGroupId(groupId);
-        
-        response = await useApi.get(`/groups/${groupId}`);
-        const { members } = response.data.data;
-        updateMembers(members);
-      }
+
+      updateGroupId(groupId);
+
+      // const reqMember = await useApi.get(`/groups/${response.data.data.groupId}`);
+      // const { members } = reqMember.data.data;
+      // updateMembers(members);
 
       navigate("/");
     } catch (e) {
