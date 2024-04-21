@@ -1,0 +1,38 @@
+.nav-container {
+  @apply w-full fixed top-0 z-[999] backdrop-blur-md transition-all ease-linear;
+}
+
+.nav-wrapper {
+  @apply flex w-full max-w-[1200px] mx-auto px-4 transition-all ease-linear;
+}
+
+.logo-container p {
+  @apply text-white;
+}
+.active {
+  @apply text-white/100;
+}
+
+.inactive { 
+  @apply text-white/40;
+}
+
+.list {
+  @apply uppercase text-white/40 hover:text-white transition-all ease-linear;
+}
+
+.mobile-navlist {
+  @apply flex md:hidden flex-col gap-5
+  fixed left-0 top-full w-full 
+  bg-dark  border-b-[1px] border-primary
+  p-6 
+  transition-all;
+}
+
+.desktop-navlist {
+  @apply md:flex hidden items-center justify-between gap-5;
+}
+
+.mobile-menu {
+  @apply block md:hidden;
+}

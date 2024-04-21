@@ -17,4 +17,59 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1px;
+}
+
+/* CONTAINER PRESET */
+.wrapper-container {
+  @apply max-w-[1200px] w-[95%] lg:w-[90%] xl:w-full
+  mx-auto my-6;
+}
+
+.wrapper {
+  @apply px-8 py-14 h-[400px];
+}
+
+/* LAYOUT FLOW*/
+.flex-center {
+  @apply items-center justify-center;
+}
+
+.flex-between {
+  @apply items-center justify-between;
+}
+
+/* BUTTON STYLES*/
+.btn-base {
+  @apply px-4 py-3 md:px-6 md:py-4 hover:scale-110 transition-all ease-linear;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-primary to-secondary text-dark;
+}
+
+.btn-gray {
+  @apply bg-white/10 text-white;
+}
+
+/* FONT SIZING */
+.font-body-1 {
+  @apply text-xs md:text-sm lg:text-base;
+}
+
+.font-body-2 {
+  @apply text-sm md:text-base lg:text-lg;
+}
+
+/* LOGO PRESET */
+.logo {
+  @apply w-14 h-14 md:w-16 md:h-16;
+}
+
+.logo-base {
+  @apply w-16 h-16 md:w-20 md:h-20;
+}
+
+.logo-sm {
+  @apply w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20;
 }
