@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
-import { navList } from "../../services/constants/navbar.js";
+import { navList } from "@services/constants/navbar.js";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="text-white">
       {navList.map((nav, index) => (
-        <Link key={index} to={nav.path}>
+        <a key={index} href={nav.path}>
           {nav.name[0].toUpperCase() + nav.name.slice(1)}
-        </Link>
+        </a>
       ))}
     </nav>
   );

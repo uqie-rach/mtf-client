@@ -1,4 +1,4 @@
-import React from 'react'
+import { Wrapper } from "@components";
 
 const About = () => {
   return (
@@ -6,4 +6,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default Wrapper(About, 'about');

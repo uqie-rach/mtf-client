@@ -1,0 +1,29 @@
+.nav-wrapper-container {
+  @apply w-full fixed z-[999] backdrop-blur-md transition-all ease-linear;
+}
+
+.nav-left p {
+  @apply text-white;
+}
+.active {
+  @apply text-white/100;
+}
+
+.list {
+  @apply uppercase;
+}
+
+.mobile-nav-list {
+  @apply flex md:hidden flex-col gap-5
+  fixed left-0 top-full bg-dark
+  p-6
+  transition-all ease-in-out  duration-500;
+}
+
+.desktop-nav-list {
+  @apply md:flex hidden items-center justify-between gap-5;
+}
+
+.mobile-menu {
+  @apply block md:hidden;
+}

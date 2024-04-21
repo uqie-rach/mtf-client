@@ -1,4 +1,4 @@
-import React from 'react'
+import { Wrapper } from "@components";
 
 const Pricing = () => {
   return (
@@ -6,4 +6,4 @@ const Pricing = () => {
   )
 }
 
-export default Pricing;
+export default Wrapper(Pricing, 'pricing');

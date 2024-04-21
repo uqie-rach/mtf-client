@@ -1,4 +1,5 @@
-import React from 'react'
+import { Wrapper } from "@components";
+
 
 const Schedule = () => {
   return (
@@ -6,4 +7,4 @@ const Schedule = () => {
   )
 }
 
-export default Schedule;
+export default Wrapper(Schedule, 'schedule');

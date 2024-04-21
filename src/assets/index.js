@@ -10,5 +10,7 @@ export { default as IPhone } from './phone-icon.svg';
 export { default as IEmail } from './email-icon.svg';
 export { default as IPlay } from './play-icon.svg';
 export { default as IChecklist } from './checklist-icon.svg';
+export { default as IMenu } from './menu-icon.svg';
+export { default as IClose } from './close-icon.svg';
 
 export { default as IHackaton } from './hackaton-icon.png';

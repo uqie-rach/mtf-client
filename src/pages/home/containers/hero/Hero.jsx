@@ -1,9 +1,8 @@
-import React from 'react'
+import { Wrapper } from "@components";
+import Button from "../../../../components/button/Button";
 
 const Hero = () => {
-  return (
-    <div className='text-white'>Hero</div>
-  )
-}
+  return <div>Hero</div>;
+};
 
-export default Hero;
+export default Wrapper(Hero, "home");
