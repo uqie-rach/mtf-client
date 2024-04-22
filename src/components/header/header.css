@@ -1,0 +1,7 @@
+.header-title {
+  @apply uppercase text-2xl md:text-3xl lg:text-4xl xl:text-5xl my-3 font-bold;
+}
+
+.header-label {
+  @apply uppercase text-sm md:text-base lg:text-lg text-white/70 font-bold;
+}

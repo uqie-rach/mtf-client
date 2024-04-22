@@ -1,0 +1,59 @@
+.event-container {
+  @apply flex flex-col lg:flex-row;
+}
+
+.events {
+  @apply bg-white/20 p-8;
+}
+
+.events .event-header {
+  @apply mb-8;
+}
+.event-wrapped {
+  @apply cursor-pointer bg-white/10 transition-all py-4;
+}
+
+.wrapped-event-header {
+  @apply flex items-center w-full lg:flex-col gap-4
+  transition-all ease-linear duration-500 scale-90 opacity-70;
+}
+
+.wrapped-event-header p {
+  @apply lg:rotate-90 lg:mt-8;
+}
+
+.event-header {
+  @apply flex items-center gap-4;
+}
+
+.event-name {
+  @apply bg-gradient-to-tr from-primary to-secondary text-transparent bg-clip-text font-extrabold uppercase text-base md:text-lg;
+
+  -webkit-background-clip: text; /* Untuk browser WebKit (Chrome, Safari, dll.) */
+  -webkit-text-fill-color: transparent;
+}
+
+.event-subtitle {
+  @apply text-white/50 text-sm md:text-base font-light;
+}
+
+/* ABOUT SPEAKER */
+.about__speaker {
+  @apply mx-auto w-fit flex flex-col sm:flex-row justify-start gap-12 md:gap-14 lg:gap-20;
+}
+
+.image-wrapper {
+  @apply flex items-end gap-4;
+}
+
+.speaker-socials img {
+  @apply md:w-6 md:h-6 lg:w-8 lg:h-8 mt-2 hover:scale-110 transition-[scale] ease-in-out duration-300 cursor-pointer;
+}
+
+.speaker-details {
+  @apply md:text-center mt-2 w-fit md:w-full;
+}
+
+.about__speaker header {
+  @apply flex-1;
+}

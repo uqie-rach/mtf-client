@@ -27,7 +27,7 @@
 }
 
 .wrapper {
-  @apply px-8 py-14 h-[400px];
+  @apply px-4 py-14;
 }
 
 /* LAYOUT FLOW*/
@@ -37,6 +37,10 @@
 
 .flex-between {
   @apply items-center justify-between;
+}
+
+.flex-start {
+  @apply items-center justify-start;
 }
 
 /* BUTTON STYLES*/
@@ -59,6 +63,11 @@
 
 .font-body-2 {
   @apply text-sm md:text-base lg:text-lg;
+}
+
+/* TEXT COLOR */
+.text-desc { 
+  @apply text-white/70 text-sm md:text-base font-light ;
 }
 
 /* LOGO PRESET */
