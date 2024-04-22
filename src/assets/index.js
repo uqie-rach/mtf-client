@@ -17,3 +17,5 @@ export { default as IClose } from "./close-icon.svg";
 
 export { default as IHackaton } from "./hackaton-icon.png";
 export { default as speakerProfile } from "./speaker-profile.jpg";
+export { default as MapLocation } from "./map-location.png";
+
