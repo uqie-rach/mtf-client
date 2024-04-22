@@ -1,0 +1,13 @@
+.schedule-container {
+ @apply flex gap-3;
+}
+
+.loader {
+    @apply w-full h-[4px] rounded-sm bg-white/20 relative;
+}
+
+.loader::before { 
+    @apply absolute top-0 left-0 w-1/2 h-full bg-white/80 rounded-full ;
+    content: "";
+}
+
