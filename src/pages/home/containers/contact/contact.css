@@ -1,0 +1,26 @@
+.map-container::before {
+  content: "";
+  @apply text-dark text-3xl font-bold
+  absolute top-0 left-0 z-[8]
+  w-full h-full 
+  scale-0 hover:scale-100 
+  transition-all ease-in-out duration-300
+  hover:bg-dark/40 
+  cursor-pointer;
+}
+
+.map-container span {
+  @apply absolute top-[10%] left-[10%] z-[8]
+    opacity-0 scale-0
+    bg-dark/80 px-8 py-4
+    text-white text-2xl font-bold uppercase;
+}
+
+.map-container span:hover p{ 
+    @apply bg-gradient-to-r text-transparent from-primary to-secondary bg-clip-text;
+}
+
+.map-container:hover span {
+  @apply opacity-100 scale-100
+    transition-all ease-in-out delay-300 duration-500;
+}
