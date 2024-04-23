@@ -45,8 +45,8 @@ const Contact = () => {
 
       {/* CONTACT INFO */}
       <div className="contact-info flex flex-wrap gap-4 md:gap-10 mt-4">
-        {contactInfo.map((info) => (
-          <a className="flex flex-center gap-4 cursor-pointer">
+        {contactInfo.map((info, i) => (
+          <a className="flex flex-center gap-4 cursor-pointer" key={i}>
             <img src={info.icon} alt={info.title} />
             <p className="font-body-2">{info.value}</p>
           </a>
