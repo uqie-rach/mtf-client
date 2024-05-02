@@ -32,7 +32,7 @@ const Hero = () => {
       />
       <button 
         onClick={handleWatchteaser}
-        className="ml-4 font-body-1 btn-base flex"><img src={IPlay} className="mr-2"/>Watch The teaser</button>
+        className="ml-4 font-body-1 btn-base flex items-center gap-2"><img src={IPlay} />Watch The teaser</button>
     </div>
     </>
   );
