@@ -10,13 +10,19 @@ export const contactInfo = [
   {
     icon: IEmail,
     title: "Email",
-    value: "maliki.tech@gmail.com",
-    link: "mailto:maliki.tech@gmail.com",
+    value: "knowledge.oz2704@gmail.com",
+    link: "mailto:knowledge.oz2704@gmail.com",
   },
   {
     icon: IPhone,
     title: "Whatsapp number",
-    value: "(+62) 851 5836 6780",
-    link: "https://wa.me/085158366780",
+    value: "Kak Radifan",
+    link: "https://wa.link/doacee",
+  },
+  {
+    icon: IPhone,
+    title: "Whatsapp number",
+    value: "Kak Faiq",
+    link: "https://wa.link/x6vori",
   },
 ];

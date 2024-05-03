@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { navList } from "@services/constants/navbar.js";
-import { MTFLogo, IClose, IMenu } from "@assets";
+import { MTFLogo, BackupLogo, IClose, IMenu } from "@assets";
 import { Button } from "@components";
 import "./navbar.css";
+import { handleRegistration } from "@services/constants/globalUtils.js";
 
 const Navbar = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -25,8 +26,6 @@ const Navbar = () => {
     };
   }, [onTop]);
 
-  const handleRegister = () => {};
-
   const handleMenuToggle = () => {
     setIsOpened(!isOpened);
   };
@@ -45,7 +44,7 @@ const Navbar = () => {
         {/* NAV LOGO */}
         <div className="logo-container flex flex-center">
           <img
-            src={MTFLogo}
+            src={BackupLogo}
             alt="Maliki Tech Festivals Logo"
             className="logo"
           />
@@ -96,7 +95,7 @@ const Navbar = () => {
           <Button
             text={"register"}
             variant={"btn-primary"}
-            onClick={handleRegister}
+            onClick={handleRegistration}
           />
         </div>
       </div>

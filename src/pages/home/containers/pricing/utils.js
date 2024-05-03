@@ -1,3 +1,5 @@
+import { handleRegistration } from "@services/constants/globalUtils";
+
 export const pricingData = [
   {
     title: "hackaton",
@@ -7,7 +9,7 @@ export const pricingData = [
     btnProps: {
       text: "Register",
       variant: "btn-gray",
-      onClick: () => {},
+      onClick: () => handleRegistration(),
     },
   },
   {
@@ -23,7 +25,7 @@ export const pricingData = [
     btnProps: {
       text: "coming soon!",
       variant: "btn-primary",
-      onClick: () => {},
+      onClick: () => alert("Coming soon!"),
     },
   },
 ];

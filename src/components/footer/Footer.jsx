@@ -35,7 +35,8 @@ const Footer = () => {
             {socialMedia.map((item, i) => (
               <a
                 key={i}
-                href={item.url}
+                target="_blank"
+                href={item.url ? item.url : ""}
                 className={`social-media-icon p-2 hover:scale-125 transition-all ease-in ${
                   item.addOns ? item.addOns : ""
                 }`}
@@ -54,7 +55,8 @@ const Footer = () => {
           <br />
           {/* COPYRIGHT */}
           <p className="font-body-1 text-white/40 text-center">
-            {`Term & Condition - Privacy Policy © ${new Date().getFullYear()} All right reserved by `} MALIKI TECH FESTIVAL
+            {`Term & Condition - Privacy Policy © ${new Date().getFullYear()} All right reserved by `}{" "}
+            <br /> MALIKI TECH FESTIVAL
           </p>
         </footer>
       </div>
