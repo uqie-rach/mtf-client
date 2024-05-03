@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { navList } from "@services/constants/navbar.js";
-import { MTFLogo, IClose, IMenu } from "@assets";
+import { MTFLogo, BackupLogo, IClose, IMenu } from "@assets";
 import { Button } from "@components";
 import "./navbar.css";
 import { handleRegistration } from "@services/constants/globalUtils.js";
@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* NAV LOGO */}
         <div className="logo-container flex flex-center">
           <img
-            src={MTFLogo}
+            src={BackupLogo}
             alt="Maliki Tech Festivals Logo"
             className="logo"
           />

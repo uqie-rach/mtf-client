@@ -38,9 +38,7 @@
 }
 
 /* ABOUT SPEAKER */
-.speaker-profile { 
-  @apply blur-2xl grayscale-[0.3];
-}
+
 .about__speaker {
   @apply mx-auto w-fit flex flex-col sm:flex-row justify-start gap-12 md:gap-14 lg:gap-20;
 }
