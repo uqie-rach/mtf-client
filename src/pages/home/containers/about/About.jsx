@@ -45,6 +45,7 @@ const About = () => {
               src={speakerData.profile}
               alt={speakerData.name}
               className="w-[180px] md:w-[220px] lg:w-[294px]"
+              draggable={false}
             />
             <div className="speaker-socials">
               {speakerData.socials.map((social, index) => (
