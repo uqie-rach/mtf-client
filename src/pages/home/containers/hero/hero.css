@@ -1,5 +1,5 @@
 .hero-title{
-    @apply uppercase uppercase text-5xl sm:text-7xl lg:text-8xl xl:text-[100px] xl:leading-[1] my-3 font-bold;
+    @apply uppercase text-xl  md:text-3xl lg:text-6xl xl:text-8xl my-3 font-bold leading-4 sm:leading-none;
 }
 
 .hero-wrap-title{
