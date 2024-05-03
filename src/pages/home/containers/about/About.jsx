@@ -7,8 +7,9 @@ import "./about.css";
 
 const About = () => {
   const [active, setActive] = useState("hackaton");
+  const [ready, setReady] = useState(false);
 
-  const handleConnect = () => {};
+  const handleConnect = () => alert("Coming soon!");
   return (
     <>
       {/* ABOUT EVENT */}
@@ -38,7 +39,7 @@ const About = () => {
       {/* ABOUT SPEAKER */}
       <div className="about__speaker">
         {/* ABOUT SPEAKER CONTENT */}
-        <div className="speaker-profile">
+        <div className={`${ready ? "" : "blur-2xl grayscale-[0.3]"}`}>
           <div className="image-wrapper">
             <img
               src={speakerData.profile}

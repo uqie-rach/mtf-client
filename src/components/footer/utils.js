@@ -10,32 +10,32 @@ export const socialMedia = [
   {
     name: "facebook",
     alt: "Maliki Tech Festival facebook page",
-    url: "https://www.facebook.com/",
+    url: null,
     icon: IFacebook,
   },
   {
     name: "twitter",
     alt: "Maliki Tech Festival twitter page",
-    url: "https://twitter.com/",
+    url: null,
     icon: ITwitter,
   },
   {
     name: "linkedin",
     alt: "Maliki Tech Festival linkedin page",
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/company/gdscmaliki/mycompany/",
     icon: IDarkLinkedIn,
     addOns: "bg-gradient-to-r from-primary to-secondary"
   },
   {
     name: "instagram",
     alt: "Maliki Tech Festival instagram page",
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/gdsc.maliki?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     icon: IInstagram,
   },
   {
     name: "youtube",
     alt: "Maliki Tech Festival youtube page",
-    url: "https://www.youtube.com/",
+    url: "https://www.youtube.com/@googledeveloperstudentclub2562",
     icon: IYoutube,
   },
 ];

@@ -3,6 +3,7 @@ import { navList } from "@services/constants/navbar.js";
 import { MTFLogo, IClose, IMenu } from "@assets";
 import { Button } from "@components";
 import "./navbar.css";
+import { handleRegistration } from "@services/constants/globalUtils.js";
 
 const Navbar = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -24,8 +25,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [onTop]);
-
-  const handleRegister = () => {};
 
   const handleMenuToggle = () => {
     setIsOpened(!isOpened);
@@ -96,7 +95,7 @@ const Navbar = () => {
           <Button
             text={"register"}
             variant={"btn-primary"}
-            onClick={handleRegister}
+            onClick={handleRegistration}
           />
         </div>
       </div>

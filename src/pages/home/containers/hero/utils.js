@@ -1,6 +1,6 @@
 export const headerData = [
     {
-        label: "EMPOWERING THE FUTURE:",
+        label: "EMPOWERING THE FUTURE",
         title: "A HACKATON",
         subtitle : "FOR GLOBAL GOALS",
         desc : "Maliki Tech Fest adalah pintu gerbang Anda menuju masa depan yang lebih cerah! Terlibatlah dalam hackathon online kami, di mana kreativitas dan kecerdasan bertemu untuk mengatasi masalah paling mendesak di dunia.",

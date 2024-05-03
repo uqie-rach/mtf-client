@@ -1,11 +1,7 @@
-.hero-title{
-    @apply uppercase text-xl md:text-3xl lg:text-6xl xl:text-8xl my-3 font-bold leading-4 sm:leading-none;
+.hero-title {
+  @apply uppercase text-5xl sm:text-7xl lg:text-8xl xl:text-[100px] xl:leading-[1] my-3 font-bold;
 }
 
-.hero-wrap-title{
-    @apply flex items-center h-fit;
-}
-
-.hero-title-year{
-    @apply text-center text-[10px] md:text-base lg:text-xl xl:text-3xl font-bold px-1 sm:px-1.5 leading-3 ml-2 sm:ml-4 bg-gray;
+.hero-title-year {
+  @apply text-center text-[10px] md:text-base lg:text-xl xl:text-3xl font-bold p-2 leading-3  bg-gray;
 }

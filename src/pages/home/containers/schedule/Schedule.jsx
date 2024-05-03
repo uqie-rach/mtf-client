@@ -1,6 +1,7 @@
 import { Wrapper, Button, SectionHeader } from "@components";
 import { headerData, timeline } from "./utils";
 import "./schedule.css";
+import { handleDownloadGuidebook } from "@services/constants/globalUtils";
 
 const Schedule = () => {
   return (
@@ -10,7 +11,7 @@ const Schedule = () => {
         <SectionHeader {...headerData} />
         <br />
 
-        <Button text="download guidebook" variant="btn-gray" />
+        <Button text="download guidebook" variant="btn-gray" onClick={handleDownloadGuidebook}/>
       </div>
 
       {/* AGENDA  */}
