@@ -8,7 +8,7 @@ const Hero = () => {
     window.location.href = "#about";
   };
   const handleWatchteaser = () => {
-    window.open("https://drive.google.com/file/d/1cDv7KH9LGhYJF_zMBxm5BUJreKDv-pQs/view", "_blank");
+    window.open("https://www.instagram.com/reel/C6mt4b6ygVZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", "_blank");
   };
   return (
     <>
