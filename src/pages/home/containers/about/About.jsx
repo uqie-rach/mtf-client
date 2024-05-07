@@ -72,7 +72,7 @@ const About = () => {
           <SectionHeader {...headerData[1]} />
           <br />
           <Button
-            text={"connect"}
+            text={"COMING SOON!"}
             variant={"btn-primary"}
             onClick={handleConnect}
           />

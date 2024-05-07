@@ -5,3 +5,7 @@
 .header-label {
   @apply uppercase text-sm md:text-base lg:text-lg text-white/70 font-bold;
 }
+
+.header-text-desc { 
+  @apply max-w-[700px] mx-auto;
+}

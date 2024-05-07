@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { navList } from "@services/constants/navbar.js";
-import { MTFLogo, BackupLogo, IClose, IMenu } from "@assets";
+import { BackupLogo, IClose, IMenu } from "@assets";
 import { Button } from "@components";
 import "./navbar.css";
 import { handleRegistration } from "@services/constants/globalUtils.js";
@@ -70,7 +70,7 @@ const Navbar = () => {
         <ul
           className={`mobile-navlist ${
             !isOpened ? "-left-full opacity-0" : "left-0 opacity-100"
-          } ${onTop ? "duration-500 ease-in-out" : "bg-white/10 ease-linear"}`}
+          } ${onTop ? "duration-500 ease-in-out" : "duration-500 ease-in-out"}`}
         >
           {navList.map((nav, index) => (
             <NavList
