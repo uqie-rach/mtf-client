@@ -9,7 +9,7 @@ const Header = ({
     <header className={`${classes}`}>
       <p className="header-label">{label}</p>
       <h1 className="header-title">{title}</h1>
-      <p className="text-desc">{desc}</p>
+      <p className="header-text-desc">{desc}</p>
     </header>
   );
 };

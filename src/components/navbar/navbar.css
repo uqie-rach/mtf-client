@@ -24,7 +24,7 @@
 .mobile-navlist {
   @apply flex md:hidden flex-col gap-5
   fixed left-0 top-full w-full 
-  bg-dark  border-b-[1px] border-primary
+  bg-[#292929]  border-b-[1px] border-primary
   p-6 
   transition-all;
 }

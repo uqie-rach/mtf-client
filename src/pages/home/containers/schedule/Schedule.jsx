@@ -2,6 +2,7 @@ import { Wrapper, Button, SectionHeader } from "@components";
 import { headerData, timeline } from "./utils";
 import "./schedule.css";
 import { handleDownloadGuidebook } from "@services/constants/globalUtils";
+import { motion } from "framer-motion";
 
 const Schedule = () => {
   return (
@@ -32,7 +33,10 @@ const Schedule = () => {
 
 function TimelineNode({ date, title, desc, index }) {
   return (
-    <>
+    <motion.div 
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.7, ease: "easeInOut", delay: index * 0.2 }}
+    >
       <p className="uppercase text-white/40 text-right text-xs lg:text-sm xl:hidden">{date}</p>
       <div className="flex gap-4">
         <div className="count  min-w-6 w-6 h-6 rounded-full bg-gradient-to-br from-primary to-secondary text-dark font-bold text-center">
@@ -49,7 +53,7 @@ function TimelineNode({ date, title, desc, index }) {
         </div>
       </div>
       {/* <div className="w-full h-[1px] rounded-sm bg-gradient-to-r opacity-30 from-primary to to-secondary"></div> */}
-    </>
+    </motion.div>
   );
 }
 

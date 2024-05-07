@@ -1,15 +1,28 @@
-import { SectionHeader } from "@components";
-import { headerData, socialMedia } from "./utils";
+import {socialMedia } from "./utils";
 import { navList } from "@services/constants/navbar";
 import "./footer.css";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  const text = `⭐ MALIKI TECH FESTIVAL ${new Date().getFullYear()}`;
   return (
     <>
-      <div className="footer-wrapper py-14">
+      <motion.div
+        className="footer-wrapper py-14"
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+      >
         <footer>
           {/* HEADER */}
-          <SectionHeader {...headerData} />
+          <h1 className="footer-header">
+            <TypeAnimation
+              sequence={["🥇SEE YOU CHAMPS🥇", 2000, text, 2000]}
+              speed={5}
+              cursor={true}
+              repeat={Infinity}
+            />
+          </h1>
           <br />
 
           {/* LISTS */}
@@ -59,7 +72,7 @@ const Footer = () => {
             <br /> MALIKI TECH FESTIVAL
           </p>
         </footer>
-      </div>
+      </motion.div>
     </>
   );
 };

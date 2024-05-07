@@ -2,13 +2,17 @@ import { Wrapper, Button } from "@components";
 import { headerData } from "./utils";
 import { IPlay } from "@assets";
 import "./hero.css";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   const handleLearnMore = () => {
     window.location.href = "#about";
   };
   const handleWatchteaser = () => {
-    window.open("https://www.instagram.com/reel/C6mt4b6ygVZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", "_blank");
+    window.open(
+      "https://www.instagram.com/reel/C6mt4b6ygVZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "_blank"
+    );
   };
   return (
     <>
@@ -23,7 +27,14 @@ const Hero = () => {
               <span>24</span>
             </span>
           </h1>
-          <h1 className="hero-title">FOR GLOBAL GOALS</h1>
+          <h1 className="hero-title">
+            <TypeAnimation
+              sequence={["FOR GLOBAL GOALS", 1500, "FROM GDSC MALIKI", 2000]}
+              speed={5}
+              cursor={true}
+              repeat={3}
+            />
+          </h1>
         </div>
         <div className="sm:w-9/12 mt-4">
           <p className="text-desc sm:tracking-widest ">{headerData[0].desc}</p>
@@ -40,7 +51,7 @@ const Hero = () => {
         />
         <button
           onClick={handleWatchteaser}
-          className="font-body-1 btn-base flex"
+          className="font-body-1 btn-base flex items-center"
         >
           <img src={IPlay} className="mr-2" />
           Watch The teaser
